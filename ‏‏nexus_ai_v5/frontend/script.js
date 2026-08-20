@@ -495,9 +495,9 @@ async function sendMessage() {
     // 2. تجهيز البيانات
     const selectedBotsArray = Array.from(selectedModels);
     // تأكد أن النماذج المختارة هي التي تُرسل للباك إند
-    console.log("Selected Bots:", targetBotString);
+    
     const targetBotString = selectedBotsArray.length > 0 ? selectedBotsArray.join(',') : 'all';
-
+    console.log("Selected Bots:", targetBotString);
     try {
         // 3. إرسال الطلب مرة واحدة فقط
         const response = await fetch('/api/chat', {
