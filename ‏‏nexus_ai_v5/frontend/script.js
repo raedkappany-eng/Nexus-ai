@@ -565,7 +565,6 @@ async function handleFileUpload(event) {
 }
 
 // ==================== بدء التطبيق ====================
-
 document.addEventListener('DOMContentLoaded', init);
 
 window.NexusAI = {
