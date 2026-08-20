@@ -840,3 +840,42 @@ body {
         gap: 15px;
     }
 }
+#attachment-preview-container {
+    position: absolute;
+    bottom: 100%;
+    left: 20px;
+    margin-bottom: 10px;
+    background: var(--bg-darker);
+    border: 1px solid var(--neon-blue);
+    border-radius: 12px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+#attachment-preview-img {
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+#remove-attachment-btn {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
