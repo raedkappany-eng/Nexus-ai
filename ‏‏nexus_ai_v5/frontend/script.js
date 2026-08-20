@@ -584,7 +584,6 @@ const previewImg = document.getElementById('attachment-preview-img');
 fileInput.addEventListener('change', function(e) {
     const file = e.target.files[0];
     if (!file) return;
-
     if (file.type.startsWith('image/')) {
         const reader = new FileReader();
         reader.onload = function(event) {
