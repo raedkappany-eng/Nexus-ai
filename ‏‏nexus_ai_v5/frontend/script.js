@@ -495,6 +495,7 @@ async function sendMessage() {
     // 2. تجهيز البيانات
     const selectedBotsArray = Array.from(selectedModels);
     // تأكد أن النماذج المختارة هي التي تُرسل للباك إند
+    console.log("Selected Bots:", targetBotString);
     const targetBotString = selectedBotsArray.length > 0 ? selectedBotsArray.join(',') : 'all';
 
     try {
